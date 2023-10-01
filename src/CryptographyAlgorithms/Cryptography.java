@@ -11,6 +11,8 @@ public class Cryptography {
         // Intermediate ....Security (key : adding character in array + randomizing that characters in that array)
         // Advanced ....Security (CryptographyAlgorithms.AES)
 
+        // CustomAlgo2 is use for OTP(one time password) where everytime key is different for different text to encrypt.
+
         //to make access modifiers PRIVATE from public as it's a program for security
 
         System.out.println("---------------------------------");
@@ -18,23 +20,6 @@ public class Cryptography {
         System.out.println("---------------------------------\n");
 
         ChooseSecurityLevel CSL = new ChooseSecurityLevel();
-
-//        ArrayList<String> text = new ArrayList<>();
-
-//        String inputString = "yourInputString";
-//        List<Character> charList = inputString.chars() // Get IntStream of characters
-//                .mapToObj(c -> (char) c) // Convert each int to char
-//                .toList(); // Collect into a List<Character>
-
-//        List<Character> chars = new ArrayList<>();
-
-        // For each character in the String
-        // add it to the List
-//        for (char ch : inputString.toCharArray()) {
-//            chars.add(ch);
-//        }
-//
-//        System.out.println(chars.get(0));
 
     }
 }

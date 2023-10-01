@@ -16,9 +16,7 @@ class CustomAlgo1 implements ExecutionLayout{
     List<Character> encryptedTextChars = new ArrayList<>();
     List<Character> decryptedTextChars = new ArrayList<>();
 
-
-    @Override
-    public void askUser() {
+    CustomAlgo1(){
 
         System.out.println("\n\n*********** WELCOME TO NOVICE ALGORITHM SECURITY ***********\n");
 
@@ -38,7 +36,15 @@ class CustomAlgo1 implements ExecutionLayout{
         for (char ch : originalTextChars) {
             System.out.print(ch);
         }
+        System.out.println("\n");
 
+        newKey();
+        askUser();
+    }
+
+
+    @Override
+    public void askUser() {
 
         while (flag){
             System.out.println("\n\nWhat do you want to do ?");
@@ -75,9 +81,18 @@ class CustomAlgo1 implements ExecutionLayout{
         System.out.print("Enter value for the key : ");
         key = sc.nextInt();
         /* Scanner.nextInt() method does not read the newline character in your input created by hitting "Enter" and skipping
-        the immediate use of scanner.nextLine() method. So, as to not happen this I have added a
-        Scanner.nextLine() method after the use of Scanner.nextInt(). */
+        * the immediate use of scanner.nextLine() method. So, as to not happen this I have added a
+        * Scanner.nextLine() method after the use of Scanner.nextInt(). */
         sc.nextLine();
+
+
+        /* So, basically .clear() method is added to clear all elements presents in encryptedTextChars & decryptedTextChars ArrayList
+        * so if we want to encrypt or decrypt the text with the newKey than no old characters present in that list will interfere
+        * this new encrypted and decrypted text. */
+        encryptedTextChars.clear();
+        decryptedTextChars.clear();
+
+        System.out.println("*New Key has been generated.*");
 
     }
 
@@ -106,7 +121,7 @@ class CustomAlgo1 implements ExecutionLayout{
     @Override
     public void decrypt() {
 
-        // Encrypted Text + key = Decrypted Text and then converting into arraylist
+        // Encrypted Text - key = Decrypted Text and then converting into arraylist
 
         // List<Character> decryptedTextChars = new ArrayList<>();
         for (char x : encryptedTextChars) {

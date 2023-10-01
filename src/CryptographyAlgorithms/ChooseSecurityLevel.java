@@ -18,14 +18,14 @@ class ChooseSecurityLevel{
 
 
             /* Scanner.nextInt() method does not read the newline character in your input created by hitting "Enter" and skipping
-            the immediate use of scanner.nextLine() method. So, as to not happen this I have added a
-            Scanner.nextLine() method after the use of Scanner.nextInt(). */
+            * the immediate use of scanner.nextLine() method. So, as to not happen this I have added a
+            * Scanner.nextLine() method after the use of Scanner.nextInt(). */
             sc.nextLine();
 
 
             if (level == 1) {
                 CustomAlgo1 customAlgo1 = new CustomAlgo1();
-                customAlgo1.askUser();
+//                customAlgo1.askUser();
             }
             else if (level == 2) {
                 CustomAlgo2 customAlgo2 = new CustomAlgo2();
