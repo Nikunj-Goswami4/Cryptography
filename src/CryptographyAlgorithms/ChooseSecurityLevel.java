@@ -32,7 +32,14 @@ class ChooseSecurityLevel{
                 customAlgo2.askUser();
             }
             else if (level == 3) {
-                AES aes = new AES();
+//                AES aes = new AES();
+
+                try {
+                    AES aes = new AES();
+                }
+                catch (Exception ignored) {
+                }
+
             }
             else {
                 System.out.println("Please enter valid Security Level!!!");
