@@ -3,7 +3,6 @@ package CryptographyAlgorithms;
 import java.util.Scanner;
 
 class ChooseSecurityLevel{
-    Scanner sc = new Scanner(System.in);
     char choice;
 
 
@@ -24,18 +23,18 @@ class ChooseSecurityLevel{
 
 
             if (level == 1) {
-                CustomAlgo1 customAlgo1 = new CustomAlgo1();
-//                customAlgo1.askUser();
+//                CustomAlgo1 customAlgo1 = new CustomAlgo1();
+                new CustomAlgo1();
             }
             else if (level == 2) {
-                CustomAlgo2 customAlgo2 = new CustomAlgo2();
-                customAlgo2.askUser();
+//                CustomAlgo2 customAlgo2 = new CustomAlgo2();
+                new CustomAlgo2();
             }
             else if (level == 3) {
-//                AES aes = new AES();
 
                 try {
-                    AES aes = new AES();
+//                    AES aes = new AES();
+                    new AES();
                 }
                 catch (Exception ignored) {
                 }

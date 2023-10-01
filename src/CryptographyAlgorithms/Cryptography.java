@@ -1,9 +1,5 @@
 package CryptographyAlgorithms;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
 public class Cryptography {
     public static void main(String[] args){
 
@@ -19,7 +15,8 @@ public class Cryptography {
         System.out.println("\t\t CRPYPTOGRAPHY");
         System.out.println("---------------------------------\n");
 
-        ChooseSecurityLevel CSL = new ChooseSecurityLevel();
+//        ChooseSecurityLevel csl = new ChooseSecurityLevel();
+        new ChooseSecurityLevel();
 
     }
 }

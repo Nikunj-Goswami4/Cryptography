@@ -4,15 +4,13 @@ import java.util.*;
 
 class CustomAlgo2 implements ExecutionLayout{
 
+    Scanner sc = new Scanner(System.in);
 
     char choice;
     boolean flag=true;
     String text;
-
-    Scanner sc = new Scanner(System.in);
-    Random random = new Random();
-    ArrayList<Character> list = new ArrayList();
-    ArrayList<Character> shuffledList= new ArrayList();
+    ArrayList<Character> list = new ArrayList<>();
+    ArrayList<Character> shuffledList= new ArrayList<>();
     char character=' ';
     char[] originalTextChars;
 
@@ -40,9 +38,6 @@ class CustomAlgo2 implements ExecutionLayout{
 
     @Override
     public void askUser() {
-
-
-
 
         while (flag) {
             System.out.println("\nWhat do you want to do ?");
@@ -87,7 +82,7 @@ class CustomAlgo2 implements ExecutionLayout{
             character++;
         }
 
-        shuffledList = new ArrayList(list);  //providing list in parentheses we make a copy of list with the name of shuffledList. This is how u make a copy in AraayList.
+        shuffledList = new ArrayList<>(list);  //providing list in parentheses we make a copy of list with the name of shuffledList. This is how u make a copy in ArrayList.
         Collections.shuffle(shuffledList);
 
         System.out.println("*New Key has been generated.*");

@@ -30,7 +30,7 @@ public class AES {
             String encryptedData = encrypt(text);
             String decryptedData = decrypt(encryptedData);
 
-            displayEncryptedDecryptedtext(text, encryptedData, decryptedData);
+            displayEncryptedDecryptedText(text, encryptedData, decryptedData);
         }
         catch (Exception ignored) {
         }
@@ -70,7 +70,7 @@ public class AES {
     }
 
 
-    public void displayEncryptedDecryptedtext(String text, String encryptedData, String decryptedData){
+    public void displayEncryptedDecryptedText(String text, String encryptedData, String decryptedData){
         System.out.println("\nOriginal Text : " + text);
         System.out.println("Encrypted Text : " + encryptedData);
         System.out.println("Decrypted Text : " + decryptedData);
